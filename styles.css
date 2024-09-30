@@ -1,6 +1,6 @@
 body {
   text-align: center;
-  background-color: #011F3F;
+  background-color: rgb(1, 31, 63);
 }
 
 #level-title {
@@ -12,16 +12,48 @@ body {
 
 .container {
   display: block;
-  width: 50%;
+  width: 70%;
+  min-width: 700px;
   margin: auto;
+}
 
+.container {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  align-items: center;
+}
+
+.navbar button {
+  background-color: #f44336;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Press Start 2P', cursive;
 }
 
 .btn {
   margin: 25px;
   display: inline-block;
-  height: 200px;
-  width: 200px;
+  height: 230px;
+  width: 230px;
   border: 10px solid black;
   border-radius: 20%;
 }
@@ -31,23 +63,32 @@ body {
   opacity: 0.8;
 }
 
-.red {
-  background-color: red;
+.red { 
+  background-color: rgb(139, 0, 0); 
+  border-top-right-radius: 80%;
 }
 
-.green {
-  background-color: green;
+.green { 
+  background-color: rgb(0, 100, 0);
+  border-top-left-radius: 80%;
 }
 
-.blue {
-  background-color: blue;
+.blue { 
+  background-color: rgb(0, 0, 139);
+  border-bottom-right-radius: 80%;
 }
 
-.yellow {
-  background-color: yellow;
+.yellow { 
+  background-color: rgb(139, 139, 0); 
+  border-bottom-left-radius: 80%;
 }
 
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
 }
+
+.hidden {
+  visibility: hidden;
+}
+
